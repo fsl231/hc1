@@ -54,17 +54,25 @@ install_packages
 clear
 
 # Prompt for Authorization
+# echo -e "${purple}=======${yellow}Hamster Combat Auto Buy best cards${purple}=======${rest}"
+# echo ""
+# echo -en "${green}Enter Authorization [${cyan}Example: ${yellow}Bearer 171852....${green}]: ${rest}"
+# read -r Authorization
+# echo -e "${purple}============================${rest}"
+
 echo -e "${purple}=======${yellow}Hamster Combat Auto Buy best cards${purple}=======${rest}"
 echo ""
-# echo -en "${green}Enter Authorization [${cyan}Example: ${yellow}Bearer 171852....${green}]: ${rest}"
-echo -en "Bearer 1720281777406b22o1IzUyp0B1zcaq0ATDdhhAGpz11rbc4Mt4mY2X6ZeAEVMZtfdICyaffUEzwUa6389285795"
-read -r Authorization
+Authorization="Bearer 1720281777406b22o1IzUyp0B1zcaq0ATDdhhAGpz11rbc4Mt4mY2X6ZeAEVMZtfdICyaffUEzwUa6389285795"
 echo -e "${purple}============================${rest}"
+
 
 # Prompt for minimum balance threshold
 # echo -en "${green}Enter minimum balance threshold (${yellow}the script will stop purchasing if the balance is below this amount${green}):${rest} "
-echo -en "12500"
-read -r min_balance_threshold
+# read -r min_balance_threshold
+
+echo -en "${green}Enter minimum balance threshold (${yellow}the script will stop purchasing if the balance is below this amount${green}):${rest} "
+# read -r min_balance_threshold  <-- Commented out or removed
+min_balance_threshold=12500  # Assigning a hardcoded value
 
 # Variables to keep track of total spent and total profit
 total_spent=0
