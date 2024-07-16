@@ -72,7 +72,7 @@ echo -e "${purple}============================${rest}"
 
 echo -en "${green}Enter minimum balance threshold (${yellow}the script will stop purchasing if the balance is below this amount${green}):${rest} "
 # read -r min_balance_threshold
-min_balance_threshold = "100000"
+min_balance_threshold="100000"
 echo -e "${purple}============================${rest}"
 
 # Prompt for second card threshold
@@ -80,9 +80,10 @@ echo -e "${purple}============================${rest}"
 # read -r threshold
 
 # echo -en "${green}Enter the Threshold that you want to buy a new card? (${yellow}number below 1 to always buy the best card and greater then 1 to buying the second best card threshold${green}):${rest}"
-Enter the Threshold that you want to buy a new card = "1"
+# Enter the Threshold that you want to buy a new card = "1"
 
-read -r threshold
+# read -r threshold
+threshold="1"
 
 # Variables to keep track of total spent and total profit
 total_spent=0
